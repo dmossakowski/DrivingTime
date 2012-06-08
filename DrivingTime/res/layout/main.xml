@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" android:layout_width="fill_parent" android:weightSum="1">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:text="@string/hello"/>
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="vertical" android:padding="5dp">
+    <SeekBar android:layout_height="wrap_content" android:id="@+id/distanceRemaining" android:max="600" android:layout_width="fill_parent" android:layout_weight="0.03"></SeekBar>
+    <TextView android:text="@string/empty" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_weight="1" android:id="@+id/distanceRemainingText"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:text="@string/empty"></TextView>
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:orientation="vertical" android:layout_gravity="right" android:padding="5dp">
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_width="fill_parent">
+    </LinearLayout>
+    <SeekBar android:layout_height="wrap_content" android:id="@+id/currentSpeedBar" android:layout_width="fill_parent" android:max="130"></SeekBar>
+    <TextView android:text="@string/empty" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:inputType="number" android:digits="0" android:id="@+id/currentSpeedValue"></TextView>
+    <SeekBar android:layout_height="wrap_content" android:id="@+id/extraSpeedBar" android:layout_width="fill_parent" android:max="130"></SeekBar>
+    <TextView android:text="@string/empty" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_weight="1" android:id="@+id/extraSpeedValue"></TextView>
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:layout_width="fill_parent">
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout5" android:layout_width="fill_parent">
+</LinearLayout>
+<TextView android:layout_gravity="center_vertical" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_weight="0.26" android:layout_width="fill_parent" android:id="@+id/savedTime" android:text="@string/empty" android:gravity="center"></TextView>
+<TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="fill_parent" android:layout_weight="0.32" android:id="@+id/savedTime2" android:text="@string/empty" android:gravity="center"></TextView>
+</LinearLayout>
